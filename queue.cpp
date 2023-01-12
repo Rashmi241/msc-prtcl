@@ -3,7 +3,7 @@ using namespace std;
 int queue[3],n=3;
 int front=-1;
 int rear=-1;
-void enque(int ele)
+void enqueue(int ele)
 {
     if(rear==n-1)
     cout<<"queue overflow!"<<endl;
@@ -40,35 +40,32 @@ void Display()
      cout<<"elements are:"<<endl;
      for(int i=front;i<=rear;i++)
      cout<<queue[i]<<" "<<endl;
-     
     }
 }
 int main()
 {
-    int ch;
+    int ch,ele;
+   while(ch!=4)
+    {
     cout<<"1)enqueue"<<endl;
     cout<<"2)dequeue"<<endl;
     cout<<"3)display"<<endl;
     cout<<"4)exit"<<endl;
-    while(ch!=4)
-    {
         cout<<"enter your choice"<<endl;
         cin>>ch;
         switch(ch)
         {
-            case 1:enqueue(int ele);
+            case 1:enqueue(ele);
             break;
-            case 2:dequeue();
+            case 2:dequeue(ele);
             break;
-            case 3:display();
+            case 3:Display();
             break;
             case 4:
           cout<<exit<<endl;
             default:
             cout<<"invalid choice"<<endl;
             break;
-            default:
-            cout<<"invalid choice"<<endl; 
         }
-    }
+     }
 }
