@@ -21,7 +21,7 @@ void dequeue(int ele)
 {
     if(front==-1||front>rear)
     {
-        cout<<"queue is emty.."<<endl;
+        cout<<"queue is empty.."<<endl;
     }
     else
     {
@@ -33,7 +33,7 @@ void Display()
 {
     if(front==-1)
     {
-        cout<<"queue is emty.."<<endl;
+        cout<<"queue is empty.."<<endl;
     }
     else
     {
