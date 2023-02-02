@@ -18,7 +18,7 @@ class childclass:baseclass
    }
    return(num1+num2);
    }
-  
+  }
    class program
    {
    public static void Main(string[] args)
@@ -27,7 +27,6 @@ class childclass:baseclass
    Console.WriteLine("base class method:"+o.add(4,7));
    o=new childclass();
     Console.WriteLine("child class method:"+o.add(2,2));
-  }
   }
   }
 }
