@@ -1,0 +1,7 @@
+node *newnode(int ndata)
+{
+   node* temp=new node;    
+   temp->ndata=ndata;
+   temp->left=temp->right=NULL; 
+   return temp;
+}

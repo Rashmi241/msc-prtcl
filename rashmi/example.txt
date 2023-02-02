@@ -1,0 +1,8 @@
+fileos.cs(24,2): error CS0103: The name `File' does not exist in the current context
+fileos.cs(29,1): error CS0103: The name `File' does not exist in the current context
+fileos.cs(45,7): error CS0120: An object reference is required to access non-static member `file.fileexist()'
+fileos.cs(48,7): error CS0120: An object reference is required to access non-static member `file.read()'
+fileos.cs(51,7): error CS0120: An object reference is required to access non-static member `file.copy()'
+fileos.cs(54,7): error CS0120: An object reference is required to access non-static member `file.delete()'
+error CS5001: Program `fileos.exe' does not contain a static `Main' method suitable for an entry point
+

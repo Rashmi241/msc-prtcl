@@ -1,0 +1,20 @@
+create  table loc (loc_id int(4) primary key,city varchar(25));
+
+create table dept(dept_id int(4) primary key, dept_name varchar(25), head varchar(25), dept_loc int(4));
+
+ create table job_grade(job_grade varchar(25) primary key, lower_bound int(6), upper_bound int(6));
+
+create table employee(employee_id int(4) primary key, dept_id int(4), first_name varchar(25), last_name varchar(25), join_date date, manager_id int(4),salary int(5), job_grade varchar(25));
+
+
+
+ alter table employee add foreign key(job_grade) references job_grade(job_grade);
+
+
+create table manager(manager_id int(4));
+
+alter table manager add primary key(manager_id);
+
+alter table manager add foreign key(manager) references manager(manager_id);
+
+
