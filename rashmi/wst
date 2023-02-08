@@ -1,7 +1,120 @@
-node *newnode(int ndata)
-{
-   node* temp=new node;    
-   temp->ndata=ndata;
-   temp->left=temp->right=NULL; 
-   return temp;
-}
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+50
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+60
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+40
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+45
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+35
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+65
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+4
+
+35
+40
+45
+50
+60
+65
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+1
+enter the node to insert:
+9
+
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+2
+
+50
+40
+35
+9
+45
+60
+65
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+enter choice:
+3
+
+65
+60
+45
+9
+35
+40
+50
+1.insrtion
+2.preorder
+3.postorder
+4.inorder
+5.exit
+
