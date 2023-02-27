@@ -1,11 +1,12 @@
 #include<iostream>
 using namespace std;
 void heapsub(int a[],int n,int i)
-{ int smallest =i;
+{
+int smallest =i;
 int l=2*i+1;
 int r=2*i+2;
 if(r<n&&a[r]<a[smallest])
-smallest=r;
+smallest =r;
 if(l<n&&a[l]<a[smallest])
 smallest =l;
 if(smallest!=i)
@@ -16,31 +17,30 @@ heapsub(a,n,smallest);
 }
 void heapsort(int a[],int n)
 {
-for(int i= n/2-1;i>=0;i--)
+for(int i=n/2-1;i>=0;i--)
 heapsub(a,n,i);
-for(int i= n-1;i>=0;i--)
+for(int i=n-1;i>=0;i--)
 {
-    int l;
 swap(a[0],a[i]);
 int temp=a[i];
-for(int j=i;j<n;j--)
+for(int j=i;j<n;j++)
 a[j]=a[j+1];
 a[n-1]=temp;
-heapsub(a,l,0);
+heapsub(a,i,0);
 }
 }
 void display(int a[],int n)
 {
-for (int i=0;i<n;i++)
+for (int i=0;i<n;++i)
 cout<<a[i]<<" ";
 cout<<endl;
 }
 int main()
 {
 int n,a[10];
-cout<<"enter the number of element hespsub:"<<endl;
+cout<<"enter the number of element heapmin:"<<endl;
 cin>>n;
-cout<<"enter the  element hespsub:"<<endl;
+cout<<"enter the  element heapsub:"<<endl;
 for(int i=0;i<n;i++)
 cin>>a[i];
 heapsort(a,n);
