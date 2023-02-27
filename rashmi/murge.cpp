@@ -71,5 +71,15 @@ int i,n;
  return 0;
 }
 
- 
- 
+ /* output:
+ enter the size of array
+5    
+enter the elelments
+5
+3
+1
+8
+2
+sorted elements are:
+1 2 3 5 8 
+*/
