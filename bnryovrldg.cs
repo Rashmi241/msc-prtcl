@@ -43,7 +43,12 @@ class complexTest
   }
 } 
 
-
+/*
+OUTPUT:
+a=2.5+j3.5
+b=16+j2.7
+c=18.5+j6.2
+*/
 
 
 
