@@ -32,11 +32,13 @@ class complexTest
    a=new complex(2.5,3.5);
    b=new complex(16,2.7);
    c=a+b;
-   Console.WriteLine("a=");
+   Console.Write("a=");
    a.display();
-   Console.WriteLine("b=");
+   Console.WriteLine();
+   Console.Write("b=");
    b.display();
-   Console.WriteLine("c=");
+   Console.WriteLine();
+   Console.Write("c=");
    c.display();
   }
 } 
