@@ -1,0 +1,74 @@
+def create():
+    stack=list()
+    return stack;
+def Isempty(stack):
+    return len(stack)==0
+def push(stack,n):
+    stack.append(n)
+    print('pushed item'+n)
+def pop(stack):
+    if(Isempty(stack)):
+     return "stack is empty"
+    else:
+        return stack.pop()
+def show(stack):
+    print("stack element are:")
+    for i in stack:
+        print(i)
+stack = create()
+push(stack,str(10))
+push(stack,str(20))
+push(stack,str(30))
+push(stack,str(40))
+print("popped item: " + pop(stack))
+show(stack)
+
+#output:
+"""
+pushed item10
+pushed item20
+pushed item30
+pushed item40
+popped item: 40
+stack element are:
+10
+20
+30
+"""
+#queue
+class Queue:
+    def __init__(self):
+        self.items = []
+    def is_empty(self):
+        return self.items == []
+    def enqueue(self, item):
+        self.items.append(item)
+    def dequeue(self):
+        if not self.is_empty():
+            return self.items.pop(0)
+        else:
+            return "Queue is empty"
+    def size(self):
+        return len(self.items)
+    def display(self):
+        print("Queue:", self.items)
+q = Queue()
+print("is the queue empty?", q.is_empty()) 
+q.enqueue(10)
+q.enqueue(20)
+q.enqueue(30)
+q.enqueue(40)
+q.display() 
+print("Dequeued item:", q.dequeue())  
+print("Dequeued item:", q.dequeue()) 
+q.display()
+print("Size of the queue:", q.size())
+#output
+"""
+is the queue empty? True
+Queue: [10, 20, 30, 40]
+Dequeued item: 10
+Dequeued item: 20
+Queue: [30, 40]
+Size of the queue: 2
+"""
